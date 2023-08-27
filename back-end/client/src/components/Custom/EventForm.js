@@ -5,43 +5,41 @@ import {
   Container, 
   FormControl, 
   InputLabel, 
-  Select, 
-  MenuItem, 
-  LinearProgress, 
-  Typography,
+  Select,
   Paper,
   Slider,
   TextareaAutosize,
-} from '@mui/material';
+  MenuItem
+} from '@material-ui/core'; // Import components from @material-ui/core
 import { BsCloudUploadFill } from 'react-icons/bs';
-import { styled } from '@mui/system';
-// import { DatePicker, DateRangePicker, CalendarPicker } from '@mui/lab';
+import { makeStyles } from '@material-ui/core/styles'; // Import makeStyles from @material-ui/core/styles
+import LinearProgress from '@material-ui/core/LinearProgress';
+import Typography from '@material-ui/core/Typography';
 import { DateRangePicker } from 'react-date-range';
-import 'react-date-range/dist/styles.css'; // Import the styles
-import 'react-date-range/dist/theme/default.css'; // Import the theme
+import 'react-date-range/dist/styles.css';
+import 'react-date-range/dist/theme/default.css';
 
-
-const useStyles = styled((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
-    padding: theme.spacing(3),
+    padding: '16px', // You can set the padding directly here
     margin: 'auto',
     maxWidth: 600,
   },
   form: {
     display: 'flex',
     flexDirection: 'column',
-    gap: theme.spacing(2),
+    gap: '16px', // You can set the gap directly here
   },
   uploadButton: {
-    marginTop: theme.spacing(2),
+    marginTop: '16px', // You can set the margin top directly here
   },
 }));
 
 const categories = ['Personal', 'Career', 'Travel', 'Family', 'Friends', 'Other'];
 
 const EventForm = () => {
-  const classes = useStyles();
-  const [eventName, setEventName] = useState(''); 
+  const classes = useStyles(); // Use the makeStyles hook
+  const [eventName, setEventName] = useState('');
   const [dateRange, setDateRange] = useState({
     startDate: null,
     endDate: null,
@@ -203,16 +201,17 @@ const EventForm = () => {
           </Typography>
           <LinearProgress variant="determinate" value={progress} />
           <Button
-            variant="contained"
-            component="label"
-            startIcon={<BsCloudUploadFill />}
-            className={classes.uploadButton}
-            style={{ marginRight: '15px' }}
-          >
-            Upload File
-            <input type="file" style={{ display: 'none' }} onChange={handleFileChange} />
-            
-          </Button>
+  variant="contained"
+  component="label"
+  startIcon={<BsCloudUploadFill />}
+  className={classes.uploadButton}
+>
+  Upload File
+  <input type="file" style={{ display: 'none' }} onChange={handleFileChange} />
+</Button>
+
+
+
           <Button
             variant="contained"
             color="primary"
@@ -235,9 +234,9 @@ const EventForm = () => {
           >
             Submit
           </Button>
-        </form>
+          </form>
       </Paper>
-    </Container>
+      </Container>
   );
 };
 

@@ -90,7 +90,7 @@ export default function Dashboard() {
           percentage={5}
           chart={ <GraphComponent jsonData={jsonData}/>}
         />
-        {/* <EventForm/> */}
+        <EventForm/>
         {/* <BuiltByDevelopers
           title={"Add"}
           name={"Purity UI Dashboard"}
