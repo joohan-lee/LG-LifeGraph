@@ -87,7 +87,8 @@ const EventForm = () => {
     // Create a FormData object to store all the data to be submitted
     const formData = new FormData();
     formData.append('eventName', eventName);
-    formData.append('dateRange', dateRange);
+    formData.append('dateRange_start', dateRange['startDate']);
+    formData.append('dateRange_end', dateRange['endDate']);
     formData.append('category', category);
     formData.append('emotionalScore', emotionalScore);
     formData.append('eventNote', eventNote);

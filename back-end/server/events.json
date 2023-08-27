@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "eventName": "Hackathon",
+    "dateRange_start": "Sun Aug 27 2023 00:00:00 GMT-0700 (북미 태평양 하계 표준시)",
+    "dateRange_end": "Sat Sep 02 2023 23:59:59 GMT-0700 (북미 태평양 하계 표준시)",
+    "category": "",
+    "emotionalScore": "20",
+    "eventNote": "ddd",
+    "uploadedFile": {
+      "fieldname": "selectedFile",
+      "originalname": "LifeGraph draft.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "uploads/",
+      "filename": "LifeGraph draft-1693171039424-26968988.png",
+      "path": "uploads\\LifeGraph draft-1693171039424-26968988.png",
+      "size": 168727
+    }
+  },
+  {
+    "id": 2,
+    "eventName": "Hackathon",
+    "dateRange_start": "Sun Aug 27 2023 00:00:00 GMT-0700 (북미 태평양 하계 표준시)",
+    "dateRange_end": "Sat Sep 02 2023 23:59:59 GMT-0700 (북미 태평양 하계 표준시)",
+    "category": "Career",
+    "emotionalScore": "30",
+    "eventNote": "ddddd",
+    "uploadedFile": {
+      "fieldname": "selectedFile",
+      "originalname": "LifeGraph draft.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "uploads/",
+      "filename": "LifeGraph draft-1693171086864-791016451.png",
+      "path": "uploads\\LifeGraph draft-1693171086864-791016451.png",
+      "size": 168727
+    }
+  },
+  {
+    "id": 3,
+    "eventName": "Hackathon",
+    "dateRange_start": "Sun Aug 27 2023 00:00:00 GMT-0700 (북미 태평양 하계 표준시)",
+    "dateRange_end": "Sat Sep 02 2023 23:59:59 GMT-0700 (북미 태평양 하계 표준시)",
+    "category": "Personal",
+    "emotionalScore": "25",
+    "eventNote": "ddd",
+    "uploadedFile": {
+      "fieldname": "selectedFile",
+      "originalname": "LifeGraph draft.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "uploads/",
+      "filename": "LifeGraph draft-1693174052960-669737374.png",
+      "path": "uploads\\LifeGraph draft-1693174052960-669737374.png",
+      "size": 168727
+    }
+  },
+  {
+    "id": 4,
+    "eventName": "Hackathon",
+    "dateRange_start": "Sun Aug 27 2023 00:00:00 GMT-0700 (북미 태평양 하계 표준시)",
+    "dateRange_end": "Sat Sep 02 2023 23:59:59 GMT-0700 (북미 태평양 하계 표준시)",
+    "category": "",
+    "emotionalScore": "15",
+    "eventNote": "dddd",
+    "uploadedFile": {
+      "fieldname": "selectedFile",
+      "originalname": "LifeGraph draft.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "uploads/",
+      "filename": "LifeGraph draft-1693174194840-219705144.png",
+      "path": "uploads\\LifeGraph draft-1693174194840-219705144.png",
+      "size": 168727
+    }
+  },
+  {
+    "id": 5,
+    "eventName": "Hackathon",
+    "dateRange_start": "Sun Aug 27 2023 00:00:00 GMT-0700 (북미 태평양 하계 표준시)",
+    "dateRange_end": "Sat Sep 02 2023 23:59:59 GMT-0700 (북미 태평양 하계 표준시)",
+    "category": "Personal",
+    "emotionalScore": "-25",
+    "eventNote": "dddd",
+    "uploadedFile": {
+      "fieldname": "selectedFile",
+      "originalname": "LifeGraph draft.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "uploads/",
+      "filename": "LifeGraph draft-1693174583272-899932306.png",
+      "path": "uploads\\LifeGraph draft-1693174583272-899932306.png",
+      "size": 168727
+    }
+  },
+  {
+    "id": 6,
+    "eventName": "Hackathon",
+    "dateRange_start": "Sun Aug 27 2023 00:00:00 GMT-0700 (북미 태평양 하계 표준시)",
+    "dateRange_end": "Sat Sep 02 2023 23:59:59 GMT-0700 (북미 태평양 하계 표준시)",
+    "category": "Personal",
+    "emotionalScore": "-50",
+    "eventNote": "dddd",
+    "uploadedFile": {
+      "fieldname": "selectedFile",
+      "originalname": "LifeGraph draft.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "C:\\Users\\jooha\\Documents\\GitHub\\LG-LifeGraph\\back-end\\client\\public\\img",
+      "filename": "LifeGraph draft-1693175546798-121527618.png",
+      "path": "C:\\Users\\jooha\\Documents\\GitHub\\LG-LifeGraph\\back-end\\client\\public\\img\\LifeGraph draft-1693175546798-121527618.png",
+      "size": 168727
+    }
+  }
+]
