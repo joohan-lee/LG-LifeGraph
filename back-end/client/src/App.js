@@ -4,10 +4,11 @@ import './App.css';
 import axios from "axios";
 import {useEffect} from "react";
 import MyComponent from './GraphComponent'; 
+import EventForm from './components/EventForm';
 
 function App() {
   const callApi = async () => {
-    axios.get('/api')
+    axios.get('/')
     .then((res) => {
       console.log(res.data.test)
     })
@@ -41,6 +42,7 @@ function App() {
       </header>
       </div>
       <MyComponent />
+      <EventForm />
   </div>
   );
 }
