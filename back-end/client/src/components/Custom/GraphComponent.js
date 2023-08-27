@@ -94,7 +94,8 @@ function MyComponent({ jsonData }) {
       <VictoryAxis
         dependentAxis
         tickValues={[-100, -50, 0, 50, 100]}
-        domain={[100, -100]}
+        // domain={[100, -100]}
+      domain={{x: [0, 100],y: [100, -100]}}
       />
       <VictoryScatter
         data={data}
@@ -106,11 +107,11 @@ function MyComponent({ jsonData }) {
             style={{ labels: { fill: 'white' } }}
           />
         }
-        
+        size={7}
+  
         style={{
-            data: {fill: getFillColor}
-            }
-        }
+          data: { fill: getFillColor }
+        }}
       />
       <VictoryLine // Line connecting apexes
         data={data}
@@ -119,8 +120,15 @@ function MyComponent({ jsonData }) {
         style={{ data: { stroke: 'black', strokeWidth: 0.3 } }}
         interpolation="monotoneX"
       />
+      <VictoryLine // Horizontal line at y=0
+        data={[{ x: Math.min(...data.map(point => point.x)), y: 0 }, { x: Math.max(...data.map(point => point.x)), y: 0 }]}
+        x="x"
+        y="y"
+        style={{ data: { stroke: 'black', strokeWidth: 0.5 } }}
+      />
     </VictoryChart>
   );
+  
 }
 
 export default MyComponent;

@@ -11,8 +11,7 @@ import peopleImage from "assets/img/people-image.png";
 import logoChakra from "assets/svg/logo-white.svg";
 import BarChart from "components/Charts/BarChart";
 import LineChart from "components/Charts/LineChart";
-import GraphComponent from 'components/Custom/GraphComponent'; 
-import EventForm from 'components/Custom/EventForm';     
+import GraphComponent from 'components/Custom/GraphComponent';  
 
 import Img1 from "assets/img/pics/img1.png";
 import Img2 from "assets/img/pics/img2.png";
@@ -52,7 +51,7 @@ import {
   GlobeIcon,
   WalletIcon,
 } from "components/Icons/Icons.js";
-import React from "react";
+import React, { useEffect } from "react";
 import { dashboardTableData, timelineData } from "variables/general";
 import ActiveUsers from "./components/ActiveUsers";
 import BuiltByDevelopers from "./components/BuiltByDevelopers";
@@ -64,6 +63,12 @@ import WorkWithTheRockets from "./components/WorkWithTheRockets";
 
 export default function Dashboard() {
   const iconBoxInside = useColorModeValue("white", "white");
+  useEffect(() => {
+    const element = document.getElementsByClassName("css-rbfty8")[0];
+    if (element) {
+      element.style.height = "500px";
+    }
+  }, []);
 
   return (
     <Flex flexDirection='column' pt={{ base: "120px", md: "75px" }}>
@@ -94,16 +99,17 @@ export default function Dashboard() {
         />
       </SimpleGrid>
       <Grid
-        templateColumns={{ md: "1fr", lg: "1.8fr 1.2fr" }}
+        templateColumns={{ md: "1fr", lg: "1fr" }}
         templateRows={{ md: "1fr auto", lg: "1fr" }}
         my='26px'
         gap='24px'>
-                  <SalesOverview
+        <SalesOverview
           title={"My Life Graph"}
-          percentage={5}
+
           chart={ <GraphComponent jsonData={jsonData}/>}
+
+          style={{ height: "1000px" }}
         />
-        <EventForm/>
         {/* <BuiltByDevelopers
           title={"Add"}
           name={"Purity UI Dashboard"}

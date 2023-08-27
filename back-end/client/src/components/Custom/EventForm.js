@@ -125,9 +125,7 @@ const EventForm = () => {
   return (
     <Container maxWidth="sm" className={classes.root}>
       <Paper elevation={3} className={classes.form}>
-        <Typography variant="h4" align="center" gutterBottom>
-          Tell me your story
-        </Typography>
+
         <form onSubmit={handleSubmit}>
           {/** Event Name */}
           <TextField
