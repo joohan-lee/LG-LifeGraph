@@ -17,6 +17,11 @@ import {
   DocumentIcon,
   GlobeIcon,
   WalletIcon,
+  DBFirstIcon,
+  DBSecondIcon,
+  DBThirdIcon,
+  DBFourthIcon
+  
 } from "components/Icons/Icons.js";
 import React from "react";
 import { dashboardTableData, timelineData } from "variables/general";
@@ -35,28 +40,28 @@ export default function Dashboard() {
     <Flex flexDirection='column' pt={{ base: "120px", md: "75px" }}>
       <SimpleGrid columns={{ sm: 1, md: 2, xl: 4 }} spacing='24px'>
         <MiniStatistics
-          title={"Today's Moneys"}
-          amount={"$53,000"}
-          percentage={55}
-          icon={<WalletIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
+          title={"Current Life Score"}
+          amount={"80%"}
+          percentage={15}
+          icon={<DBFirstIcon h={"40px"} w={"40px"} color={iconBoxInside} />}
         />
         <MiniStatistics
-          title={"Today's Users"}
-          amount={"2,300"}
+          title={"T3 Months Score"}
+          amount={"65%"}
+          percentage={12}
+          icon={<DBSecondIcon h={"40px"} w={"40px"} color={iconBoxInside} />}
+        />
+        <MiniStatistics
+          title={"Memorable Events (12M)"}
+          amount={"+7"}
+          percentage={-2}
+          icon={<DBThirdIcon h={"40px"} w={"40px"} color={iconBoxInside} />}
+        />
+        <MiniStatistics
+          title={"Future Events"}
+          amount={"+2"}
           percentage={5}
-          icon={<GlobeIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
-        />
-        <MiniStatistics
-          title={"New Clients"}
-          amount={"+3,020"}
-          percentage={-14}
-          icon={<DocumentIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
-        />
-        <MiniStatistics
-          title={"Total Sales"}
-          amount={"$173,000"}
-          percentage={8}
-          icon={<CartIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
+          icon={<DBFourthIcon h={"40px"} w={"40px"} color={iconBoxInside} />}
         />
       </SimpleGrid>
       <Grid
