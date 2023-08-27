@@ -201,7 +201,7 @@ function SidebarResponsive(props) {
           alignItems="center"
           fontSize="11px"
         >
-          <CreativeTimLogo w="32px" h="32px" me="10px" />
+          <CreativeTimLogo w="40px" h="40px" me="10px" />
           <Text fontSize="sm" mt="3px">
             {logoText}
           </Text>
