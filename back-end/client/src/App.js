@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import axios from "axios";
 import {useEffect} from "react";
+import MyComponent from './GraphComponent'; 
 
 function App() {
   const callApi = async () => {
@@ -39,6 +40,7 @@ function App() {
       </a>
       </header>
       </div>
+      <MyComponent />
   </div>
   );
 }
