@@ -112,5 +112,43 @@
       "path": "C:\\Users\\jooha\\Documents\\GitHub\\LG-LifeGraph\\back-end\\client\\public\\img\\LifeGraph draft-1693175546798-121527618.png",
       "size": 168727
     }
+  },
+  {
+    "id": 7,
+    "eventName": "Hackathon",
+    "dateRange_start": "Sun Aug 27 2023 00:00:00 GMT-0700 (북미 태평양 하계 표준시)",
+    "dateRange_end": "Sat Sep 02 2023 23:59:59 GMT-0700 (북미 태평양 하계 표준시)",
+    "category": "Personal",
+    "emotionalScore": "-60",
+    "eventNote": "dddd",
+    "uploadedFile": {
+      "fieldname": "selectedFile",
+      "originalname": "LifeGraph draft.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "C:\\Users\\jooha\\Documents\\GitHub\\LG-LifeGraph\\back-end\\client\\public\\img",
+      "filename": "LifeGraph draft-1693176771120-623357166.png",
+      "path": "C:\\Users\\jooha\\Documents\\GitHub\\LG-LifeGraph\\back-end\\client\\public\\img\\LifeGraph draft-1693176771120-623357166.png",
+      "size": 168727
+    }
+  },
+  {
+    "id": 8,
+    "eventName": "trip",
+    "dateRange_start": "Sun Aug 20 2023 00:00:00 GMT-0700 (북미 태평양 하계 표준시)",
+    "dateRange_end": "Sat Aug 26 2023 23:59:59 GMT-0700 (북미 태평양 하계 표준시)",
+    "category": "Travel",
+    "emotionalScore": "50",
+    "eventNote": "ddddd",
+    "uploadedFile": {
+      "fieldname": "selectedFile",
+      "originalname": "LifeGraph draft.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "C:\\Users\\jooha\\Documents\\GitHub\\LG-LifeGraph\\back-end\\client\\public\\img",
+      "filename": "LifeGraph draft-1693176810507-814090667.png",
+      "path": "C:\\Users\\jooha\\Documents\\GitHub\\LG-LifeGraph\\back-end\\client\\public\\img\\LifeGraph draft-1693176810507-814090667.png",
+      "size": 168727
+    }
   }
 ]

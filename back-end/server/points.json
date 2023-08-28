@@ -70,5 +70,17 @@
     "y": 42,
     "pic": "http://localhost:3000/img/img12.png",
     "name": "retirement"
+  },
+  {
+    "x": "13",
+    "y": -60,
+    "pic": "http://localhost:3000/img/LifeGraph draft-1693176771120-623357166.png",
+    "name": "Hackathon"
+  },
+  {
+    "x": "14",
+    "y": 50,
+    "pic": "http://localhost:3000/img/LifeGraph draft-1693176810507-814090667.png",
+    "name": "trip"
   }
 ]
