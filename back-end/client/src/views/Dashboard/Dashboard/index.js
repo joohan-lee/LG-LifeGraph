@@ -26,6 +26,7 @@ import Img10 from "assets/img/pics/img10.png";
 import Img11 from "assets/img/pics/img11.png";
 import Img12 from "assets/img/pics/img12.png";
 
+import axios from "axios";
 
 // ### Test json Data ###
 const jsonData = [
@@ -67,6 +68,19 @@ import SalesOverview from "./components/SalesOverview";
 import WorkWithTheRockets from "./components/WorkWithTheRockets";
 
 export default function Dashboard() {
+  const callApi = async () => {
+    axios.get('/')
+    .then((res) => {
+      console.log(res.data.test)
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+  };
+  
+  useEffect(() => {
+    callApi();
+  }, []);
   const iconBoxInside = useColorModeValue("white", "white");
   useEffect(() => {
     const element = document.getElementsByClassName("css-rbfty8")[0];

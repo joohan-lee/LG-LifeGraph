@@ -16,12 +16,14 @@
 
 */
 import React from "react";
+import { useEffect } from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import AuthLayout from "layouts/Auth.js";
 import AdminLayout from "layouts/Admin.js";
 import RTLLayout from "layouts/RTL.js";
+
 
 ReactDOM.render(
   <HashRouter>

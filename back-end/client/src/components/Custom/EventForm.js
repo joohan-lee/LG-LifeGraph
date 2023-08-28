@@ -92,7 +92,7 @@ const EventForm = () => {
     formData.append('selectedFile', selectedFile);
 
     try {
-      const response = await fetch('http://localhost:3000/api/eventAdd', {
+      const response = await fetch('http://localhost:8080/api/eventAdd', {
         method: 'POST',
         body: formData,
         // headers: {

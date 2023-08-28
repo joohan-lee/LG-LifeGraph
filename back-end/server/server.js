@@ -3,6 +3,13 @@ const express = require('express');
 //const proxy = require('http-proxy-middleware');
 const app = express();
 const test = require('./Router/test2');
+
+
+
+
+const cors = require('cors');
+app.use(cors()); // allow all domains.
+app.use(express.json())
 // 
 
 app.use('/api', test);
